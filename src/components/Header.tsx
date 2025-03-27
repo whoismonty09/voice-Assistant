@@ -39,6 +39,7 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
       </div>
       
       <div className="flex items-center space-x-2">
+        {/* Wrap each tooltip in its own TooltipProvider */}
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger asChild>
